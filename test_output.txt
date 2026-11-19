@@ -1,0 +1,25 @@
+Command: python -m unittest discover -s tests -v
+
+test_duplicate_registration_does_not_reveal_existing_email (test_auth.AuthTests) ... ok
+test_generic_error_same_for_unknown_user_and_wrong_password (test_auth.AuthTests) ... ok
+test_login_then_profile_works (test_auth.AuthTests) ... ok
+test_logout_ends_session (test_auth.AuthTests) ... ok
+test_password_is_hashed_not_stored_in_plaintext (test_auth.AuthTests) ... ok
+test_profile_requires_login (test_auth.AuthTests) ... ok
+test_rate_limit_blocks_after_five_failures (test_auth.AuthTests) ... ok
+test_rate_limit_resets_after_window (test_auth.AuthTests) ... ok
+test_rejects_invalid_email (test_auth.AuthTests) ... ok
+test_rejects_oversized_password (test_auth.AuthTests) ... ok
+test_rejects_password_without_numbers (test_auth.AuthTests) ... ok
+test_rejects_short_password (test_auth.AuthTests) ... ok
+test_rejects_wrong_types_and_missing_body (test_auth.AuthTests) ... ok
+test_responses_are_not_cacheable (test_auth.AuthTests) ... ok
+test_same_password_gets_different_hashes_salted (test_auth.AuthTests) ... ok
+test_session_cookie_has_secure_flags (test_auth.AuthTests) ... ok
+test_session_expires_after_lifetime (test_auth.AuthTests) ... ok
+test_sql_injection_attempt_does_not_log_in (test_auth.AuthTests) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 2.320s
+
+OK
